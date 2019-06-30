@@ -28,6 +28,7 @@ class NvPipeConan(ConanFile):
     
     requires = (
         "cuda_dev_config/[>=1.0]@camposs/stable",
+        "nvidia-video-codec-sdk/9.0.20@vendor/stable",
         )
 
     scm = {
