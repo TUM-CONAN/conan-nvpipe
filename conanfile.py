@@ -4,7 +4,7 @@ import os
 
 class NvPipeConan(ConanFile):
     name = "nvpipe"
-    version = "0.1"
+    version = "0.2"
     generators = "cmake"
     settings = "os", "arch", "compiler", "build_type"
 
@@ -28,6 +28,7 @@ class NvPipeConan(ConanFile):
     
     requires = (
         "cuda_dev_config/[>=1.0]@camposs/stable",
+        "nvidia-video-codec-sdk/9.0.20@vendor/stable",
         )
 
     scm = {

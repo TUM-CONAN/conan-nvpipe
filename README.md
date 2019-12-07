@@ -10,14 +10,14 @@
 
 ### Basic setup
 
-    $ conan install nvpipe/0.1@camposs/stable
+    $ conan install nvpipe/0.2@camposs/stable
     
 ### Project setup
 
 If you handle multiple dependencies in your project is better to add a *conanfile.txt*
     
     [requires]
-    nvpipe/0.1@camposs/stable
+    nvpipe/0.2@camposs/stable
 
     [options]
     nvpipe:with_opengl=true # false
@@ -42,4 +42,4 @@ The example below shows the commands used to publish to campar conan repository.
 
 ## Upload packages to server
 
-    $ conan upload nvpipe/0.1@camposs/stable --all -r camposs    
+    $ conan upload nvpipe/0.2@camposs/stable --all -r camposs    
