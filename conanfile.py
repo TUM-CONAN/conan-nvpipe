@@ -47,6 +47,7 @@ class NvPipeConan(ConanFile):
         cmake.definitions["NVPIPE_WITH_DECODER"] = self.options.with_decoder
         cmake.definitions["NVPIPE_WITH_OPENGL"] = self.options.with_opengl
         cmake.definitions["NVPIPE_BUILD_EXAMPLES"] = "OFF"
+        cmake.definitions["CUDA_TOOLKIT_ROOT_DIR"] = self.options["cuda_dev_config"].cuda_root
 
         cmake.configure()
         cmake.build()
